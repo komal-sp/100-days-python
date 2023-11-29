@@ -1,5 +1,4 @@
 # import smtplib
-#
 # my_email = "blossom.diaries29@gmail.com"
 # password = "wyoc dsvz nmmx iypx"
 #
