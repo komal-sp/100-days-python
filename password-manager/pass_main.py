@@ -24,6 +24,7 @@ def generate_password():
     pyperclip.copy(password)
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
+
 def save():
 
     website = website_entry.get()
@@ -41,13 +42,13 @@ def save():
     else:
         try:
             with open("data.json", "r") as data_file:
-                #Reading old data
+                # Reading old data
                 data = json.load(data_file)
         except FileNotFoundError:
             with open("data.json", "w") as data_file:
                 json.dump(new_data, data_file, indent=4)
         else:
-            #Updating old data with new data
+            # Updating old data with new data
             data.update(new_data)
 
             with open("data.json", "w") as data_file:
@@ -100,7 +101,7 @@ website_entry.grid(row=1, column=1)
 website_entry.focus()
 email_entry = Entry(width=35)
 email_entry.grid(row=2, column=1, columnspan=2)
-email_entry.insert(0, "angela@gmail.com")
+email_entry.insert(0, "ksphadtar5@gmail.com")
 password_entry = Entry(width=21)
 password_entry.grid(row=3, column=1)
 
